@@ -1,7 +1,13 @@
-// Load stylesheet from TypeKit in a document
-// Look for img[src=*.svg] with data-svg-typekit attribute.
-// Replace it with an <object> (so SVG can be responsive) and inject the stylesheet in this SVG.
-// Be sure to use the same font family names in the SVG
+/*
+ * jQuery svg-typekit Plugin 0.1
+ * https://github.com/willemvb/svg-typekit
+ *
+ * Copyright 2015, Willem Van Bockstal
+ * https://spatie.be
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
 
 (function ($) {
     $.fn.svgTypekit = function () {

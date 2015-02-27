@@ -86,8 +86,3 @@
 $(document).ready(function(){
     $('[data-svg-typekit]').svgTypekit();
 });
-
-
-
-
-

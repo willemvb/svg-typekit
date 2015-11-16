@@ -21,14 +21,15 @@
             images.each(function () {
 
                 //img to replace
-                var img = $(this);
-                var imgSrc = $(this).attr('src');
+                var img = $(this),
+                    imgSrc = $this.attr('src'),
+                    imgClasses = $this.attr('class');
 
                 //assure there is a .svg src
                 if (imgSrc.search('.svg') > 0) {
 
                     //make object tag with image src
-                    var svg = $('<object class="svg" type="image/svg+xml">').attr('data', imgSrc);
+                    var svg = $('<object class="svg' + imgClasses + '" type="image/svg+xml">').attr('data', imgSrc);
                     var svgDomElement = svg[0];
 
                     //replace img tag with object
